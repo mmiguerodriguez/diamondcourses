@@ -6,14 +6,27 @@ class Navbar extends React.Component {
     super(props);
 
     this.redirectToFeedback = this.redirectToFeedback.bind(this);
+    this.goBack = this.goBack.bind(this);
   }
 
   redirectToFeedback() {
     browserHistory.push(`/feedback/${encodeURIComponent(this.props.currentUrl)}`);
   }
 
+  goBack() {
+    // When the user finishes a lesson, he is redirected to coursePage
+    // If he goes back in the history, the component is going to be LessonPage
+    // and not HomePage (the desired component)  
+    if (this.props.currentComponentName === 'CoursePage') {
+      browserHistory.push('/');
+    } else {
+      browserHistory.goBack();
+    }
+  }
+
   render() {
     let title;
+    // TODO: Improve this
     // We generate the navbar title depending on the url
     if (this.props.currentUrl.includes('feedback')) {
       // The user is in feedbackPage
@@ -48,7 +61,7 @@ class Navbar extends React.Component {
             { (this.props.currentUrl.includes('course') ||
               this.props.currentUrl.includes('feedback'))
               ? <a
-                onClick={browserHistory.goBack}
+                onClick={this.goBack}
               >
                 <i className="material-icons" id="navbar-arrow">arrow_back</i>
               </a>
@@ -76,6 +89,7 @@ class Navbar extends React.Component {
 Navbar.propTypes = {
   className: React.PropTypes.string,
   currentUrl: React.PropTypes.string.isRequired,
+  currentComponentName: React.PropTypes.string.isRequired,
 };
 
 Navbar.defaultProps = {
