@@ -109,7 +109,7 @@ const QueComerLessonRaw = [
   },
   {
     type: 'multiple-choice',
-    question: 'Encontrás una receta y tiene más de 10 ingredientes de preparación. Cuando ya terminaste de preparar la receta, te preguntás: comerlo será sano?',
+    question: 'En un restaurant te sirven un plato que usaron más de 10 ingedientes para cocinarlo. Comerlo será sano?',
     options: [
       {
         content: 'Si',
