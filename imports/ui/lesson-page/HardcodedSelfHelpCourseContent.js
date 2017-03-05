@@ -325,7 +325,7 @@ const ProblemaMenteCuerpoLessonRaw = [
   },
   {
     type: 'content',
-    title: 'Cómo nos vemos nosotros',
+    title: 'Cómo nos vemos',
     text: 'Cuando se trata de nosotros mismos, sabemos que la manera en que lucimos obviamente no es lo que somos.',
     forceNewStack: true,
   },
