@@ -47,14 +47,14 @@ Las computadoras son torpes, lo único que saben hacer es seguir instrucciones.`
   },
   {
     type: 'order',
-    question: 'Ordená las instrucciones como deberían ir para hacer un licuado',
+    question: 'Ordená las instrucciones como deberían ir para hacer un licuado de frutillas',
     options: [
       {
-        content: 'Meter ingredientes en la licuadora',
+        content: 'Meter las frutillas en la licuadora',
         correctPosition: 2,
       },
       {
-        content: 'Enchufar la licuadora',
+        content: 'Lavar las frutillas',
         correctPosition: 1,
       },
       {
@@ -389,7 +389,7 @@ Se escribe \`\`\`console.log\`\`\` y entre paréntesis la variable que queremos 
   },
   {
     type: 'content',
-    imageUrl: '/images/courses/programming/number-block.png',
+    imageUrl: '/images/courses/programming/number-blocks.png',
     text: 'Primero tenemos el tipo de dato **number** (número). Todas las variables que almacenan un número son de este tipo; el número puede ser tanto positivo como negativo, y puede tener coma.',
   },
   {
