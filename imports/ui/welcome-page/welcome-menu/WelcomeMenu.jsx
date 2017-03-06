@@ -91,7 +91,9 @@ class WelcomeMenu extends React.Component {
               className="btn"
               id="welcome-menu-next-button"
               onClick={this.props.next}
-            > &gt; </button> /* > */
+            >
+              <i className="material-icons">keyboard_arrow_right</i>
+            </button>
           }
         </div>
       </div>
