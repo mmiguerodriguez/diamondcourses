@@ -8,6 +8,8 @@
 
 .navbar-header {
   display: flex;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 #navbar-title {
@@ -21,7 +23,6 @@
   width: 50px !important;
   height: 33.07px !important;
   margin-top: 10px;
-  margin-left: 15px;
 }
 
 #navbar-feedback {
@@ -39,5 +40,4 @@
   color: $white-1-color;
   margin-left: auto;
   margin-top: 8px;
-  margin-left: 15px;
 }
