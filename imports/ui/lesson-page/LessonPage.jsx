@@ -13,7 +13,7 @@ import {
   ComoComerLesson,
 } from './HardcodedFoodCourseContent';
 import {
-  IntroDesarrolloPersonalLesson,
+  IntroPsicologiaLesson,
   PesimismoYOptimismoLesson,
   ProblemaMenteCuerpoLesson,
   CrisisExistencialesLesson,
@@ -83,10 +83,10 @@ class LessonPage extends React.Component {
           cardsContent = ImportanciaDeComerLesson;
           break;
       }
-    } else if (this.props.params.courseName === 'Desarrollo Personal') {
+    } else if (this.props.params.courseName === 'Psicología') {
       switch (this.props.params.lessonName) {
         case 'Introducción':
-          cardsContent = IntroDesarrolloPersonalLesson;
+          cardsContent = IntroPsicologiaLesson;
           break;
         case 'Pesimismo y optimismo':
           cardsContent = PesimismoYOptimismoLesson;
@@ -98,7 +98,7 @@ class LessonPage extends React.Component {
           cardsContent = CrisisExistencialesLesson;
           break;
         default:
-          cardsContent = IntroDesarrolloPersonalLesson;
+          cardsContent = IntroPsicologiaLesson;
           break;
       }
     }

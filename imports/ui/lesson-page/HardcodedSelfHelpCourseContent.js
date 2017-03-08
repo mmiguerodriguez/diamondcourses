@@ -1,9 +1,9 @@
 import replaceNewLineInCards from './../../utils/client/replaceNewLineInCards';
 // TODO: Fix quizzes
-const IntroDesarrolloPersonalLessonRaw = [
+const IntroPsicologiaLessonRaw = [
   {
     type: 'content',
-    title: 'Desarrollo Personal',
+    title: 'Psicología',
     text: 'En el mundo moderno, cómo afrontás varias situaciones puede tener un impacto muy grande en tu vida.',
   },
   {
@@ -26,10 +26,10 @@ const IntroDesarrolloPersonalLessonRaw = [
     imageUrl: '/images/courses/self-help/workspace.svg',
     title: 'Felicitaciones',
     text: 'Ya sabés de que se trata este curso, en la próxima lección vamos a ver distintas mentalidades y cómo afectan a cada persona.',
-    nextUrl: '/course/Desarrollo',
+    nextUrl: '/course/Psicología',
   },
 ];
-const IntroDesarrolloPersonalLesson = replaceNewLineInCards(IntroDesarrolloPersonalLessonRaw);
+const IntroPsicologiaLesson = replaceNewLineInCards(IntroPsicologiaLessonRaw);
 
 const PesimismoYOptimismoLessonRaw = [
   {
@@ -303,7 +303,7 @@ Reduce sus expectativas!`,
     type: 'feedback',
     title: 'Ayudanos!',
     text: 'Necesitamos tu ayuda! Decinos todas las sugerencias o comentarios que tengas!',
-    nextUrl: '/course/Desarollo',
+    nextUrl: '/course/Psicología',
   },
 ];
 const PesimismoYOptimismoLesson = replaceNewLineInCards(PesimismoYOptimismoLessonRaw);
@@ -429,7 +429,7 @@ const ProblemaMenteCuerpoLessonRaw = [
     imageUrl: '/images/courses/self-help/happy-1.svg',
     title: 'Muy bien!',
     text: 'Finalizaste la lección del problema mente cuerpo! Ahora ya sabés que la apariencia superficial no es importante y que la felicidad no tiene que ver con cómo te ves!',
-    nextUrl: '/course/Desarrollo',
+    nextUrl: '/course/Psicología',
   },
 ];
 const ProblemaMenteCuerpoLesson = replaceNewLineInCards(ProblemaMenteCuerpoLessonRaw);
@@ -626,7 +626,7 @@ Somos mucho más libres de lo que creemos.`,
     type: 'finish',
     imageUrl: '/images/courses/self-help/road.svg',
     title: 'Felicitaciones!',
-    text: 'Terminaste el curso de desarrollo personal! Ahora conoces mucho más cómo actúa la gente y cómo pensar y actuar para ser más feliz y vivir plenamente!',
+    text: 'Terminaste el curso de psicología! Ahora conoces mucho más cómo actúa la gente y cómo pensar y actuar para ser más feliz y vivir plenamente!',
   },
   {
     type: 'feedback',
@@ -638,7 +638,7 @@ Somos mucho más libres de lo que creemos.`,
 const CrisisExistencialesLesson = replaceNewLineInCards(CrisisExistencialesLessonRaw);
 
 export {
-  IntroDesarrolloPersonalLesson,
+  IntroPsicologiaLesson,
   PesimismoYOptimismoLesson,
   ProblemaMenteCuerpoLesson,
   CrisisExistencialesLesson,

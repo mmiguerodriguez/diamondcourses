@@ -15,10 +15,10 @@ class HomePage extends React.Component {
         courseUrl: '/course/Alimentación',
       },
       {
-        name: 'Desarrollo personal',
+        name: 'Psicología',
         description: 'Aprende a planificar tu futuro, a sentirte mejor con como te ves y a sobrevivir una crisis existencial.',
         imageUrl: '/images/courses/growth-plant.png',
-        courseUrl: '/course/Desarrollo Personal',
+        courseUrl: '/course/Psicología',
       },
       {
         name: 'Programación',
