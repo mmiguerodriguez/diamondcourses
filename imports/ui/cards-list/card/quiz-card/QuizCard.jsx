@@ -7,6 +7,20 @@ import OrderCard from './order-card/OrderCard';
 import CodeCard from './code-card/CodeCard';
 
 class QuizCard extends React.Component {
+  static messageDuration(message, wordsPerMinute = 120) {
+    /**
+     * Returns an estimate of the time in milliseconds that it would take to read the message.
+     * @param {string} message The message
+     * @param {float} wordsPerMinute The average number of words the reader reads in a minute
+     */
+    const numberOfWordsEstimate = (message.match(/ /g) || []).length + 1;
+
+    // Convert the number of words to the milliseconds it would take to read them
+    const timeToRead = (numberOfWordsEstimate / (wordsPerMinute / 60)) * 1000;
+
+    return timeToRead;
+  }
+
   constructor(props) {
     super(props);
     this.state = {

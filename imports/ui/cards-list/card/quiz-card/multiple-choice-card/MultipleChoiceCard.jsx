@@ -3,6 +3,8 @@ import ReactMarkdown from 'react-markdown';
 
 import CodeRenderer from '../../../../../utils/client/CodeRenderer';
 
+import QuizCard from '../QuizCard';
+
 class MultipleChoiceCard extends React.Component {
   constructor(props) {
     super(props);
@@ -36,11 +38,11 @@ class MultipleChoiceCard extends React.Component {
       return false;
     } else if (!this.props.options[selectedOption].correct) {
       const content = this.props.options[selectedOption].message || 'Incorrecto';
-      $.snackbar({ content });
+      $.snackbar({ content, duration: QuizCard.messageDuration(content) });
       return false;
     } else {
       const content = this.props.options[selectedOption].message || 'Muy bien!';
-      $.snackbar({ content });
+      $.snackbar({ content, duration: QuizCard.messageDuration(content) });
       return true;
     }
   }
