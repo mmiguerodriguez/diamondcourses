@@ -99,10 +99,9 @@ Se puede comprender mejor con la siguiente ecuación: **felicidad = realidad / e
   {
     type: 'content',
     imageUrl: '/images/courses/self-help/chemistry.svg',
-    text: `Entonces, para **ser FELIZ**:
-* Mejoras la **realidad**
-ó
-* Reducís las **expectativas**`,
+    text: `Entonces, para **ser FELIZ** tenés dos alternativas:
+* Mejorar la **realidad**
+* Reducir las **expectativas**`,
   },
   {
     type: 'content',
@@ -326,7 +325,7 @@ const ProblemaMenteCuerpoLessonRaw = [
   },
   {
     type: 'content',
-    title: 'Cómo nos vemos nosotros',
+    title: 'Cómo nos vemos',
     text: 'Cuando se trata de nosotros mismos, sabemos que la manera en que lucimos obviamente no es lo que somos.',
     forceNewStack: true,
   },
@@ -631,7 +630,7 @@ Somos mucho más libres de lo que creemos.`,
   {
     type: 'feedback',
     title: 'Ayudanos!',
-    text: 'Necesitamos tu ayuda! Decinos todas las sugerencias o comentarios que tengas!',
+    text: 'Qué te pareció el curso? Decinos todas las sugerencias o comentarios que tengas!',
     nextUrl: '/',
   },
 ];

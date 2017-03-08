@@ -109,7 +109,7 @@ const QueComerLessonRaw = [
   },
   {
     type: 'multiple-choice',
-    question: 'Encontrás una receta y tiene más de 10 ingredientes de preparación. Cuando ya terminaste de preparar la receta, te preguntás: comerlo será sano?',
+    question: 'En un restaurante te sirven un plato que usaron más de 10 ingedientes para cocinarlo. Comerlo será sano?',
     options: [
       {
         content: 'Si',
@@ -195,7 +195,7 @@ const TiposDeComidaLessonRaw = [
   },
   {
     type: 'multiple-choice',
-    question: 'En un restaurant, el mozo te pregunta si querés que el plato venga con sal desde la cocina. Que sería lo más saludable para responderle?',
+    question: 'En un restaurante, el mozo te pregunta si querés que el plato venga con sal desde la cocina. Que sería lo más saludable para responderle?',
     options: [
       {
         content: 'Si, que venga con sal',
